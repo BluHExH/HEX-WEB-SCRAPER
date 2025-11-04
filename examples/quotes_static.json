@@ -1,0 +1,51 @@
+{
+  "name": "quotes_static",
+  "mode": "static",
+  "base_url": "https://quotes.toscrape.com",
+  "start_paths": ["/"],
+  "selectors": {
+    "item": ".quote",
+    "fields": {
+      "text": ".text",
+      "author": ".author",
+      "tags": ".tags .tag"
+    }
+  },
+  "pagination": {
+    "next_selector": ".next a",
+    "next_url_template": null
+  },
+  "storage": {
+    "type": "csv",
+    "path": "data/quotes_static.csv",
+    "unique_key": "text"
+  },
+  "user_agents": [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  ],
+  "rate_limit": {
+    "delay_seconds": 1.5,
+    "jitter": true
+  },
+  "concurrency": {
+    "global": 5,
+    "per_domain": 2
+  },
+  "proxies": {
+    "enabled": false,
+    "list": [],
+    "validate": true
+  },
+  "telegram": {
+    "enabled": false,
+    "bot_token": "",
+    "chat_id": ""
+  },
+  "selenium": {
+    "remote_url": "",
+    "headless": true,
+    "screenshot_on_error": true
+  }
+}
