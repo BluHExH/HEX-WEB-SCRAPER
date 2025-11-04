@@ -1,5 +1,7 @@
 # HEX Web Scraper
 
+![My image](https://github.com/BluHExH/BluHExH/blob/main/IMG_20251104_123036.png)
+
 A production-ready, fully featured, secure, and configurable web scraping automation tool.
 
 ## Features
