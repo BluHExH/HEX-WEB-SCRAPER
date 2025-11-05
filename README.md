@@ -1,6 +1,6 @@
 # HEX Web Scraper
 
-![My image](https://github.com/BluHExH/BluHExH/blob/main/IMG_20251104_123036.png)
+![My image](https://github.com/BluHExH/BluHExH/blob/main/IMG_20251105_073905.png)
 
 <!-- Animated HEX Banner -->
 <p align="center">
